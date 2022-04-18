@@ -5,7 +5,14 @@
   "repository": "https://github.com/BernardoVieira1/Gobarber2.git",
   "author": "BernardoVieira1 <bernardovieira50@gmail.com>",
   "license": "MIT",
+  "scripts": {
+    "dev": "nodemon src/server.js" 
+  },
   "dependencies": {
     "express": "^4.17.3"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.15",
+    "sucrase": "^3.21.0"
   }
 }
