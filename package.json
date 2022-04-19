@@ -6,13 +6,14 @@
   "author": "BernardoVieira1 <bernardovieira50@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "dev": "nodemon src/server.js" 
+    "dev": "nodemon src/server.js"
   },
   "dependencies": {
     "express": "^4.17.3"
   },
   "devDependencies": {
     "nodemon": "^2.0.15",
+    "eslint": "^8.13.0",
     "sucrase": "^3.21.0"
   }
 }
