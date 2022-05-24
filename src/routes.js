@@ -11,6 +11,7 @@ import ProviderController from './app/controllers/ProviderController';
 
 
 import authMiddlewares from './app/middlewares/auth'
+import AppointmentController from './app/controllers/AppointmentController';
 
 
 const routes = new Router();
@@ -20,6 +21,8 @@ routes.post('/users', UserController.store);
 routes.post('/sessions', SessionController.store);
 
 routes.use(authMiddlewares);
+
+routes.post('/appointments', AppointmentController.store)
 
 routes.get('/providers', ProviderController.index);
 routes.post('/files', upload.single('file'), FileController.store);
